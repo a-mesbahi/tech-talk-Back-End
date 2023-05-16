@@ -1,0 +1,13 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOriginPatterns:
+              - "http://localhost:4200/"
+            allowedMethods: "*"
+            allowedHeaders: "*"
+            allowCredentials: true
+            exposedHeaders:
+              - "Authorization"
